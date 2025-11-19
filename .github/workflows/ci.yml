@@ -136,3 +136,4 @@ jobs:
           docker-compose up -d --no-build
           docker image prune -f
           echo "Deploy concluído com sucesso!"
+          
