@@ -129,10 +129,10 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fazer Deploy com Docker Compose
+        shell: cmd
         run: |
           echo "Iniciando deploy seguro..."
           docker-compose pull
           docker-compose up -d --no-build
           docker image prune -f
           echo "Deploy concluído com sucesso!"
-          
